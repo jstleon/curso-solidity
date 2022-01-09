@@ -63,12 +63,12 @@ import "./ERC20.sol";
 Luego se crea una instancia a la que llamamos token
 
 ````Solidity
-  ERC20Basic token;
+ERC20Basic token;
 ````
 
 Por último creamos 1000 Tokens.
 
 ````Solidity
-  token = new ERC20Basic(1000);
+token = new ERC20Basic(1000);
 ````
 
