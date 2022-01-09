@@ -1,6 +1,6 @@
 # 2.8 Comentarios
 
-Es muy importante comentar nuestro código. No solo para nosotros, sino para cualquiera que entre a leer nuestro código. Debemos documentar nuestro código 
+Es muy importante comentar nuestro código. No solo para nosotros, sino para cualquiera que entre a leerlo pueda comprender el código y entender qué estamos pensando. Debemos documentar nuestro código en todo momento.
 
 Cuando estamos en fase de desarrollo podemos utilizar:
 
@@ -17,9 +17,9 @@ multilínea!
 */
 ````
 
-Aunque para desarrollar puedes utlizar los comentarios "clásicos" utilizados aquí arriba, debes saber que cuando publiques tu contrato desde adaptarte al estándar de Solidity.
+Aunque para desarrollar puedes utlizar los comentarios "clásicos" utilizados aquí arriba, debes saber que cuando publiques tu contrato debes adaptarte al estándar de Solidity.
 
-El estandar de comentarios en Solidity utiliza el formato [NatSpec](https://docs.soliditylang.org/en/develop/natspec-format.html)
+El estandar de comentarios en Solidity utiliza el formato [NatSpec](https://docs.soliditylang.org/en/develop/natspec-format.html) y se ve algo así:
 
 ````Solidity
 /// @title <Título de contrato>
@@ -31,7 +31,7 @@ El estandar de comentarios en Solidity utiliza el formato [NatSpec](https://docs
 
 ````
 
-Ejemplo con comentarios "clásicos" para utilizar en fases de desarrollo
+Ejemplo con comentarios "clásicos" para utilizar en fases de desarrollo:
 ````Solidity
 // Indicamos la versión
 pragma solidity >=0.4.0 < 0.7.0;
@@ -54,4 +54,4 @@ contract PrimerContrato {
     }
 }
 
-````
+```
