@@ -32,3 +32,43 @@ contract PrimerContrato {
 }
 
 ````
+
+*El contructor sólo se ejecuta una vez, cuando se inicializa el contrato*
+
+
+````Solidity
+
+pragma solidity >=0.4.0 < 0.7.0;
+import "./ERC20.sol";
+
+contract PrimerContrato {
+    
+    address owner;
+    ERC20Basic token;
+
+    constructor() public {
+        owner = msg.sender;
+        token = new ERC20Basic(1000);
+    }
+}
+
+````
+
+En el ejemplo de aquí arriba estamos importando otro archivo de solidity, ERC20.sol, que es el archivo que usamos para crear tokens.
+
+````Solidity
+import "./ERC20.sol";
+````
+
+Luego se crea una instancia a la que llamamos token
+
+````Solidity
+  ERC20Basic token;
+````
+
+Por último creamos 1000 Tokens.
+
+````Solidity
+  token = new ERC20Basic(1000);
+````
+
